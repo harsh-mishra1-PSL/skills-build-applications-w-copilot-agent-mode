@@ -1,4 +1,18 @@
-# React + TypeScript + Vite
+# OctoFit Tracker frontend
+
+The presentation tier uses React 19, Vite, Bootstrap, and `react-router-dom`.
+
+For a Codespace, create `octofit-tracker/frontend/.env.local` and define the
+Codespace name used by the API host:
+
+```env
+VITE_CODESPACE_NAME=your-codespace-name
+```
+
+`VITE_CODESPACE_NAME` must be defined for the frontend to call
+`https://${VITE_CODESPACE_NAME}-8000.app.github.dev/api/[component]/`.
+When it is unset, the app safely falls back to `http://localhost:8000` for
+local backend development.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
